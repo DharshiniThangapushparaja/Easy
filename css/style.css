@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsla(229, 6%, 66%, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 50px 0px;
+}
+/* HEADER*/
+.header {
+  font-weight: 200;
+  font-size: 30px;
+  width: 370px;
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.headbody {
+  color: hsl(229, 6%, 66%);
+  width: 370px;
+  text-align: center;
+  padding: 20px 0 40px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 230px;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(216, 216, 216, 0.7);
+}
+
+.card::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team::before {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.supervisor::before {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.karma::before {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.calculator::before {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.img {
+  width: 60px;
+  align-self: flex-end;
+}
+
+.card-title {
+  font-weight: 600px;
+  margin-bottom: 10px;
+  color: hsl(234, 12%, 34%);
+  font-size: 20px;
+}
+
+.card-text {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1000px) {
+  
+
+  .card {
+    border-radius: 5px;
+    width: 350px;
+  }
+
+  .container-middle {
+    padding: 0 50px 0 50px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .header {
+    font-size: 35px;
+    width: 450px;
+  }
+
+  .headbody {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+}
